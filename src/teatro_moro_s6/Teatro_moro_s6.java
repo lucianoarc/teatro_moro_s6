@@ -192,8 +192,8 @@ static double cuatropersonas=50;
     
     
     public static void personasx2(String edades){                               //CODIGO PERSONASX2 (OPCION CUANDO EL USUARIO COMPRA 2 ENTRADAS)
-        int vip,plateaalta,palcos,preciobase,total=0;
-        String categoria,pagar,ubicacion;
+        int vip,plateaalta,palcos,preciobase=0,total=0;
+        String categoria,pagar,ubicacion=null;
         double descuento=0,descuentototal=0;
         
         System.out.println("Que categoria necesitas?");
@@ -201,6 +201,7 @@ static double cuatropersonas=50;
         System.out.println("- Platea alta");
         System.out.println("- Palcos");
         entrada.nextLine();
+        do{
         categoria = entrada.nextLine().toLowerCase();
         System.out.println("");
              switch (categoria){
@@ -224,8 +225,9 @@ static double cuatropersonas=50;
                     break;
             default:
                     System.out.println("Categoria invalida.");
-                    return;
+                    break;
                                 }
+             } while (!categoria.equalsIgnoreCase("vip")&& !categoria.equalsIgnoreCase("platea alta") && !categoria.equalsIgnoreCase("palcos"));
             
                     if (edades.equalsIgnoreCase("estudiante")) {
                     descuento = estudiante; // Descuento estudiante
@@ -267,8 +269,8 @@ static double cuatropersonas=50;
     
     
     public static void personasx3(String edades){                               //CODIGO PERSONASX3 (OPCION CUANDO EL USUARIO COMPRA 3 ENTRADAS)
-        int vip,plateaalta,palcos,preciobase,total=0;
-        String categoria,pagar,ubicacion;
+        int vip,plateaalta,palcos,preciobase=0,total=0;
+        String categoria,pagar,ubicacion=null;
         double descuento=0,descuentototal=0;
         
         System.out.println("Que categoria necesitas?");
@@ -276,6 +278,7 @@ static double cuatropersonas=50;
         System.out.println("- Platea alta");
         System.out.println("- Palcos");
         entrada.nextLine();
+        do{
         categoria = entrada.nextLine().toLowerCase();
         System.out.println("");
             switch (categoria){
@@ -299,8 +302,9 @@ static double cuatropersonas=50;
                     break;
             default:
                     System.out.println("Categoria invalida.");
-                    return;
+                    break;
                     }
+            } while (!categoria.equalsIgnoreCase("vip")&& !categoria.equalsIgnoreCase("platea alta") && !categoria.equalsIgnoreCase("palcos"));
                      if (edades.equalsIgnoreCase("estudiante")) {
                         descuento = estudiante; // Descuento estudiante
                     } 
@@ -341,8 +345,8 @@ static double cuatropersonas=50;
 
                                                                                 //CODIGO PERSONASX3 (OPCION CUANDO EL USUARIO COMPRA 3 ENTRADAS)
 public static void personasx4(String edades){                                   //CODIGO PERSONASX4 (OPCION CUANDO EL USUARIO COMPRA 4 ENTRADAS)
-        int vip,plateaalta,palcos,preciobase,total=0;
-        String categoria,pagar,ubicacion;
+        int vip,plateaalta,palcos,preciobase=0,total=0;
+        String categoria,pagar,ubicacion=null;
         double descuento=0,descuentototal=0;
         
             System.out.println("Que categoria necesitas?");
@@ -350,6 +354,7 @@ public static void personasx4(String edades){                                   
             System.out.println("- Platea alta");
             System.out.println("- Palcos");
             entrada.nextLine();
+            do{
             categoria = entrada.nextLine().toLowerCase();
             System.out.println("");
             switch (categoria){
@@ -373,8 +378,9 @@ public static void personasx4(String edades){                                   
                     break;
             default:
                     System.out.println("Categoria invalida.");
-                    return;
+                    break;
                     }
+            } while (!categoria.equalsIgnoreCase("vip")&& !categoria.equalsIgnoreCase("platea alta") && !categoria.equalsIgnoreCase("palcos"));
                     if (edades.equalsIgnoreCase("estudiante")) {
                         descuento = estudiante; // Descuento estudiante
                     } 
